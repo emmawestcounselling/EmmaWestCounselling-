@@ -1,0 +1,5 @@
+# Deploy with a personal Cloudflare account only.
+# Do not use a work / Sparx account for this project.
+name = "emma-west-counselling"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-08-18"

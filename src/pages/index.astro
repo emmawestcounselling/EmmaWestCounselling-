@@ -1,0 +1,122 @@
+---
+import Base from '../layouts/Base.astro';
+import { testimonials } from '../site';
+---
+
+<Base
+  title="Emma West Counselling"
+  description="Online counselling with Emma West, a BACP accredited counsellor, wherever you are."
+>
+  <section class="hero">
+    <h1>Emma West<br />Counselling</h1>
+  </section>
+
+  <section class="section wash">
+    <div class="section-inner">
+      <p class="lede">Online counselling for you, wherever you are</p>
+      <p>
+        Hello - my name is Emma - I am an experienced, BACP accredited counsellor with
+        specialist training in online counselling.
+      </p>
+      <p>
+        I've found that the vast majority of my clients benefit from psycho education
+        [learning about how the brain works but without needing to be a neuroscientist!]
+        - say hello to your 'Monkey' brain... and most want practical strategies and
+        techniques that they can easily apply to effect change. If that sounds like you
+        then please get in touch.
+      </p>
+      <p>
+        I can help you with a range of issues including stress, low mood, anxiety,
+        dissatisfaction at work or with life in general, low self esteem/confidence,
+        relationship/family problems, parenting issues, loss, anger and trauma.
+      </p>
+      <p>
+        I also have specialist experience and knowledge of disability, carer, health,
+        student and gender dysphoria issues, and I am LGBTQIA2S+ affirmative. I have
+        lived experience of rare disability and carer issues.
+      </p>
+      <p>
+        I charge £60 for a 50 minute session which includes being sent resources post
+        session for you to refer to and keep.
+      </p>
+      <p>
+        While I can't give you medical advice I can support you if you are thinking about
+        taking, are taking, or wish to stop taking, psychiatric drugs eg
+        'antidepressants'.
+      </p>
+    </div>
+  </section>
+
+  <section class="section wash" aria-label="Therapy sessions">
+    <div class="cards two">
+      <div class="card">
+        <img src="/images/therapy-sessions.jpg" alt="A counselling session on a laptop" width="476" height="427" />
+      </div>
+      <div class="card">
+        <h2>How can I help you?</h2>
+        <p>Whatever you are finding difficult, painful or confusing</p>
+        <p>I can work with you to achieve positive change</p>
+        <p>through Online Counselling.</p>
+        <p><a class="read-more" href="/how-can-i-help-you">Read More</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wash">
+    <div class="cards two">
+      <div class="card">
+        <h2>About me</h2>
+        <p>Find out more about my background, counselling experience, qualifications</p>
+        <p>and training.</p>
+        <p><a class="read-more" href="/about-me">Read More</a></p>
+      </div>
+      <div class="card">
+        <img
+          src="/images/emma-and-luna.jpg"
+          alt="Emma smiling with a dog"
+          width="400"
+          height="334"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section wash">
+    <div class="cards three">
+      <article class="card">
+        <h3>Why have online counselling</h3>
+        <p>There are many advantages to online counselling in terms of time, cost and location.</p>
+        <p><a class="read-more" href="/why-have-online-counselling">Read More</a></p>
+      </article>
+      <article class="card">
+        <h3>My approach</h3>
+        <p>
+          The most important thing in counselling is the ‘therapeutic relationship’ – a
+          good counsellor is one who leaves you feeling you are being listened to, cared
+          for and not judged.
+        </p>
+        <p><a class="read-more" href="/my-approach">Read More</a></p>
+      </article>
+      <article class="card">
+        <h3>Frequently asked questions</h3>
+        <p>
+          Everything [hopefully!] you'll want to know about the service I provide [and
+          if it's not here - please just ask]
+        </p>
+        <p><a class="read-more" href="/frequently-asked-questions">Read More</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section wash" aria-label="Testimonials">
+    <div class="section-inner">
+      {
+        testimonials.map((quote) => (
+          <blockquote class="quote">
+            <p>{quote}</p>
+          </blockquote>
+        ))
+      }
+    </div>
+  </section>
+</Base>

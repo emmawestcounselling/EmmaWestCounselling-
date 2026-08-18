@@ -1,0 +1,374 @@
+@font-face {
+  font-family: 'Jost';
+  src: url('/fonts/jost-latin.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #ffffff;
+  --wash: #e8eef3;
+  --text: #111111;
+  --muted: #333333;
+  --line: #c5d0d8;
+  --max: 46rem;
+  --wide: 68rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.5rem 0.75rem;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-wrap {
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.15rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a,
+.nav-list summary {
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+
+.nav-list a:hover,
+.nav-list summary:hover,
+.nav-list [aria-current='page'] {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item details {
+  position: relative;
+}
+
+.nav-item summary {
+  list-style: none;
+}
+
+.nav-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + 0.4rem);
+  min-width: 16rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 0.6rem 0.85rem;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+}
+
+.dropdown li + li {
+  margin-top: 0.45rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 5.5rem 1.25rem 4.5rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: Jost, Futura, 'Century Gothic', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 7vw, 5.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.wash {
+  background: var(--wash);
+}
+
+.section {
+  padding: 3.25rem 1.25rem;
+}
+
+.section-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-inner.left {
+  text-align: left;
+}
+
+.lede {
+  font-family: Jost, Futura, 'Century Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  margin: 0 0 1.6rem;
+}
+
+.section-inner p {
+  margin: 0 0 1.15rem;
+}
+
+.section-inner p:last-child {
+  margin-bottom: 0;
+}
+
+.page-title {
+  font-family: Jost, Futura, 'Century Gothic', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.prose h2,
+.prose h3 {
+  font-family: Jost, Futura, 'Century Gothic', sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.prose h2 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0.8rem;
+}
+
+.prose h3 {
+  font-size: 1.1rem;
+  margin: 1.6rem 0 0.6rem;
+}
+
+.prose ul {
+  padding-left: 1.2rem;
+}
+
+.prose li + li {
+  margin-top: 0.35rem;
+}
+
+.cards {
+  max-width: var(--wide);
+  margin: 0 auto;
+  display: grid;
+  gap: 2.5rem 1.5rem;
+}
+
+.cards.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+}
+
+.cards.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  text-align: center;
+}
+
+.card h2,
+.card h3 {
+  font-family: Jost, Futura, 'Century Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem;
+}
+
+.card p {
+  margin: 0 0 0.75rem;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 16rem;
+}
+
+.read-more {
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.quote {
+  max-width: 40rem;
+  margin: 0 auto;
+  font-family: Jost, Futura, 'Century Gothic', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+
+.quote + .quote {
+  margin-top: 2rem;
+}
+
+.articles {
+  display: grid;
+  gap: 2.5rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  max-width: var(--wide);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.article-card h2 {
+  font-family: Jost, Futura, 'Century Gothic', sans-serif;
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+}
+
+.article-card a {
+  text-decoration: none;
+}
+
+.article-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background: #d7dee4;
+  margin-bottom: 0.75rem;
+}
+
+.article-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  background: var(--bg);
+  text-align: center;
+  padding: 2.5rem 1.25rem 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.site-footer p {
+  margin: 0 0 0.5rem;
+}
+
+.footer-meta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  margin-top: 1.25rem;
+}
+
+.footer-meta a {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+@media (max-width: 800px) {
+  .nav-toggle-label {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .nav-list {
+    display: none;
+    margin-top: 0.9rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-toggle:checked ~ .nav-list {
+    display: flex;
+  }
+
+  .dropdown {
+    position: static;
+    transform: none;
+    border: 0;
+    padding: 0.4rem 0 0.2rem 0.8rem;
+  }
+
+  .cards.two,
+  .cards.three {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 3.5rem 1.25rem 3rem;
+  }
+}

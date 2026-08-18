@@ -1,0 +1,44 @@
+---
+import { nav } from '../site';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+function isCurrent(href?: string) {
+  if (!href) return false;
+  const normalised = href.replace(/\/$/, '') || '/';
+  return path === normalised;
+}
+---
+
+<header class="site-header">
+  <nav class="nav-wrap" aria-label="Site">
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+    <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+    <ul class="nav-list">
+      {
+        nav.map((item) => (
+          <li class="nav-item">
+            {item.children ? (
+              <details>
+                <summary>{item.label}</summary>
+                <ul class="dropdown">
+                  {item.children.map((child) => (
+                    <li>
+                      <a href={child.href} aria-current={isCurrent(child.href) ? 'page' : undefined}>
+                        {child.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ) : (
+              <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

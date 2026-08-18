@@ -1,0 +1,16 @@
+---
+import { email, siteName } from '../site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer" id="contact">
+  <p>For further information or to get the ball rolling please</p>
+  <p>e mail me: <a href={`mailto:${email}`}>{email}</a></p>
+  <p>&copy; {year} {siteName}</p>
+  <p class="footer-meta">
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/cookie-policy">Cookie Policy</a>
+    <a href="/contact">Contact</a>
+  </p>
+</footer>

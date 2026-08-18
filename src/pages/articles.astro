@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import { articles } from '../data/articles';
+---
+
+<Base title="My articles" description="Articles written by Emma West on counselling, mental health and wellbeing.">
+  <section class="section wash">
+    <div class="section-inner">
+      <h1 class="page-title">My articles</h1>
+    </div>
+    <div class="articles">
+      {
+        articles.map((article) => (
+          <article class="article-card">
+            <h2>{article.title}</h2>
+            <a
+              href={article.href}
+              target={article.external ? '_blank' : undefined}
+              rel={article.external ? 'noopener noreferrer' : undefined}
+            >
+              <img src={article.image} alt="" width="320" height="427" />
+              <p>Click on image to read</p>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</Base>
