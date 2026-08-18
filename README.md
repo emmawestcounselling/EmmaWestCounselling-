@@ -23,8 +23,6 @@ Output is in `dist/`.
 
 ## Deploy (personal Cloudflare only)
 
-Do not use a Sparx, work, or shared company Cloudflare/GitHub account for this site.
-
 1. Create a free Cloudflare account at [dash.cloudflare.com](https://dash.cloudflare.com) using a personal email.
 2. Accept the [Cloudflare DPA](https://www.cloudflare.com/en-gb/cloudflare-customer-dpa/) in the dashboard.
 3. Create a Pages project named `emma-west-counselling` (direct upload from `dist/`, or connect a **personal** GitHub repo).
@@ -32,7 +30,6 @@ Do not use a Sparx, work, or shared company Cloudflare/GitHub account for this s
 5. In the zone / Pages settings, leave **off**: Email Address Obfuscation, Rocket Loader, Bot Fight Mode.
 6. Use Always HTTPS. Attach the existing domain when ready.
 
-This machine’s GitHub CLI login (`mikewest1uk`) is invalid, and there is no current personal Cloudflare login I could safely use. After you sign in to a personal Cloudflare account:
 
 ```sh
 npx wrangler login
