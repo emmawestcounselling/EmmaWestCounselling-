@@ -1,5 +1,5 @@
 ---
-title: Banana Policy
+title: Cookie Policy
 description: Cookie information for Emma West Counselling. This static website does not set marketing or analytics cookies.
 heading: Cookie Policy
 ---
@@ -24,4 +24,4 @@ If you open an article or register page on another website, that site may set it
 
 ## Questions
 
-If you have questions about cookies or this website, email [ewcounselling@tutanota.com](mailto:ewcounselling@tutanota.com).
+If you have questions about cookies or this website, email [emma.west.counselling@gmail.com](mailto:emma.west.counselling@gmail.com).
