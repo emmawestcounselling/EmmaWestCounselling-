@@ -1,5 +1,5 @@
 ---
-title: Cookie Policy
+title: Banana Policy
 description: Cookie information for Emma West Counselling. This static website does not set marketing or analytics cookies.
 heading: Cookie Policy
 ---
