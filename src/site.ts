@@ -31,4 +31,7 @@ export const nav: NavItem[] = [
 
 export const testimonials = [
   'Thank you so much for your help over the last six weeks. I am feeling so much better and more in control of my life now, thank you for helping me look at things in a more balanced way! I’ve loved coming to see you.',
+  'Thank you Emma for ALL that you have done to help me get through that very very bad time. I appreciate everything and value all the papers I have.',
+  'You have changed my life in ways you’ll never know. Thank you so much, you are amazing.',
+  'Out of all the people I have seen before, I feel like you are the one who has provided me with things I can actually implement, and that will make a difference.',
 ];
