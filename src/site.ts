@@ -1,6 +1,6 @@
 export const siteName = 'Emma West Counselling';
 export const siteUrl = 'https://emmawestcounselling.pages.dev';
-export const email = 'ewcounselling@tutanota.com';
+export const email = 'emma.west.counselling@gmail.com';
 export const bacpRegisterUrl = 'https://www.bacpregister.org.uk/check_register/';
 export const bacpNumber = '185778';
 export const icoNumber = 'ZA250217';
