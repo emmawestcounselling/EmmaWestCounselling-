@@ -42,7 +42,7 @@ Open http://127.0.0.1:4321/
 
 - Stack: Astro 7, static HTML, almost no JavaScript
 - Visual aim: match the current Wix site (centred type, pale blue-grey wash, same nav)
-- Email aligned to `ewcounselling@tutanota.com` (Wix showed Gmail in the text and Tutanota in one mailto)
+- Public contact email is `emma.west.counselling@gmail.com`
 - Privacy policy updated for Cloudflare; cookie policy added
 - Article PDFs and images are in `public/` so they do not depend on Wix
 - Cookie-light Cloudflare settings: leave **off** Email Address Obfuscation, Rocket Loader, Bot Fight Mode
