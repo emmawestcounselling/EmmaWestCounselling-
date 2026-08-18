@@ -261,6 +261,10 @@ summary:focus-visible {
   max-width: 16rem;
 }
 
+.card img.portrait {
+  max-width: 13.5rem;
+}
+
 .read-more {
   font-weight: 700;
   text-decoration: none;
