@@ -180,7 +180,7 @@ Processing includes the retrieval, organisation, use, protection, storage and de
 
 If you have any questions about this privacy policy or how your personal information is handled, please contact:
 
-Emma West Counselling, email: [ewcounselling@tutanota.com](mailto:ewcounselling@tutanota.com)
+Emma West Counselling, email: [emma.west.counselling@gmail.com](mailto:emma.west.counselling@gmail.com)
 
 My ICO registration details are recorded with the Information Commissioner's Office. My registration number is ZA250217.
 
